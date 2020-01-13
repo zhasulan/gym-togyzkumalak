@@ -1,4 +1,4 @@
-from toguzkumalak.kazan import Kazan
+from gym_toguzkumalak.toguzkumalak.kazan import Kazan
 
 
 class Otau:

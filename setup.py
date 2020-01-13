@@ -1,12 +1,23 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
-    name='gym-toguzkumalak',
+    name='gym_toguzkumalak',
     version='0.0.1',
-    description='',
+    description='Toguzkumalak like mankala games',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author='Zhassulan Berdibekov',
     author_email='zhasulan87@gmail.com',
-    package='gym-toguzkumalak',
+    package='gym_toguzkumalak',
     install_requires=['gym', 'texttable'],
     packages=find_packages(),
+    # classifiers=[
+    #     "Programming Language :: Python :: 3",
+    #     "License :: OSI Approved :: MIT License",
+    #     "Operating System :: OS Independent",
+    # ],
+    python_requires='>=3.6',
 )

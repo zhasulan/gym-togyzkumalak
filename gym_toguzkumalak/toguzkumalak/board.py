@@ -1,7 +1,7 @@
 import texttable
 
-from toguzkumalak.gamer import Gamer
-from toguzkumalak.kazan import Kazan
+from gym_toguzkumalak.toguzkumalak.gamer import Gamer
+from gym_toguzkumalak.toguzkumalak.kazan import Kazan
 
 
 class Board:

@@ -1,7 +1,7 @@
 import random
 
-from toguzkumalak.kazan import Kazan
-from toguzkumalak.otau import Otau
+from gym_toguzkumalak.toguzkumalak.kazan import Kazan
+from gym_toguzkumalak.toguzkumalak.otau import Otau
 
 
 class Gamer:
