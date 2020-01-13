@@ -188,6 +188,7 @@ if __name__ == "__main__":
     # # WHITE
 
     d = False
+    obs, rew = None, None
 
     while not d:
         a = board.sample_action()

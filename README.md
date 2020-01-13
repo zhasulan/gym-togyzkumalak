@@ -10,6 +10,12 @@ Then install this package via
 pip install -e .
 ```
 
+or
+
+```
+pip install gym-toguzkumalak
+```
+
 ## Usage
 
 ```
@@ -24,3 +30,6 @@ examples.
 
 
 ## The Environment
+
+The environment provides old central Asia game [Toguzkumalak](https://en.wikipedia.org/wiki/Toguz_korgol). This is one of the variant of game of [Mancala](https://en.wikipedia.org/wiki/Mancala). The toguzkumalak is a family of two-player turn-based strategy board game.
+Environment of this game provide full information. 

@@ -8,7 +8,7 @@ class ToguzkumalakEnv(gym.Env):
     metadata = {'render.modes': ['human']}
 
     def __init__(self):
-        self.__version__ = "0.0.1"
+        self.__version__ = "0.0.3"
 
         self.action_space = spaces.Discrete(9)
         self.board = Board()
