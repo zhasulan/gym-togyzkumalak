@@ -77,7 +77,7 @@ class Board:
                 home_gamer = self.opponent_gamer(home_gamer)
                 tuzduk_kazan: Kazan = self.opponent_gamer(home_gamer).kazan
                 home = self.switch_home()
-                otau = 1
+                otau = 0
                 pass
 
             home[otau].add(tuzduk_kazan)
@@ -159,3 +159,13 @@ class Board:
         pass
 
     pass
+
+
+if __name__ == '__main__':
+    board = Board()
+    board.move(0)
+    board.print()
+    board.move(1)
+    board.print()
+    # board.move(0)
+    # board.print()
