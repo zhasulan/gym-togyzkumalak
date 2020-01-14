@@ -67,7 +67,7 @@ class Board:
         elif kumalaks == 1:
             kumalaks += 1
         else:
-            raise Exception("Игрок не может ходить с лунке где не имеется кумалаков")
+            raise Exception("Игрок не может ходить с лунки где не имеется кумалаков")
 
         for i in range(kumalaks - 1):
             otau += 1

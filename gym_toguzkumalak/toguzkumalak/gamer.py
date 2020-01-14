@@ -55,11 +55,14 @@ class Gamer:
 
         return random.choice(a)
 
-    def __str__(self):
-        return self.name
+    def check_action(self, action):
+        return True if self.home[action].kumalaks > 0 else False
 
     def add(self, kumalaks):
         self.kazan.add(kumalaks)
         pass
+
+    def __str__(self):
+        return self.name
 
     pass
