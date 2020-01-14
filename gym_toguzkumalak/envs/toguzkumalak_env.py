@@ -31,3 +31,6 @@ class ToguzkumalakEnv(gym.Env):
     def render(self, mode='human'):
         self.board.print()
         pass
+
+    def check_action(self, action):
+        return self.board.run.check_action(action)
