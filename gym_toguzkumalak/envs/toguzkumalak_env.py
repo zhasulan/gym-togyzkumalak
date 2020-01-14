@@ -25,6 +25,7 @@ class ToguzkumalakEnv(gym.Env):
 
     def reset(self):
         self.board = Board()
+        self.action_space.update_board(self.board)
         return self.board.observation()
 
     def render(self, mode='human'):
