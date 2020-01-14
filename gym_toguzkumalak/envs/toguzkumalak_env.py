@@ -10,7 +10,7 @@ class ToguzkumalakEnv(gym.Env):
     metadata = {'render.modes': ['human']}
 
     def __init__(self):
-        self.__version__ = "0.0.5"
+        self.__version__ = "0.0.6"
 
         self.board = Board()
         self.action_space = ToguzkumalakDiscrete(9, self.board)
@@ -25,7 +25,7 @@ class ToguzkumalakEnv(gym.Env):
 
     def reset(self):
         self.board = Board()
-        pass
+        return self.board.observation()
 
     def render(self, mode='human'):
         self.board.print()

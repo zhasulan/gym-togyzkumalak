@@ -72,7 +72,7 @@ class Board:
         for i in range(kumalaks - 1):
             otau += 1
 
-            if otau % 10 == 0:
+            if otau % 9 == 0:
                 take_if_opponent = not take_if_opponent
                 home_gamer = self.opponent_gamer(home_gamer)
                 tuzduk_kazan: Kazan = self.opponent_gamer(home_gamer).kazan
@@ -129,10 +129,10 @@ class Board:
 
         col_width = [14]
 
-        for i in range(1, 10, 1):
-            names[0].append(self.gamers['black'].home[10 - i].name)
-            names[1].append("№%s" % (10 - i))
-            names[2].append(self.gamers['black'].home[10 - i])
+        for i in range(9):
+            names[0].append(self.gamers['black'].home[8 - i].name)
+            names[1].append("№%s" % (8 - i))
+            names[2].append(self.gamers['black'].home[8 - i])
 
             names[3].append(self.gamers['white'].home[i])
             names[4].append("№%s" % i)
