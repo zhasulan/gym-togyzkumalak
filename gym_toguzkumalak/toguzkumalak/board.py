@@ -3,6 +3,8 @@ import texttable
 from gym_toguzkumalak.toguzkumalak.gamer import Gamer
 from gym_toguzkumalak.toguzkumalak.kazan import Kazan
 
+import numpy as np
+
 
 class Board:
 
@@ -43,10 +45,10 @@ class Board:
         pass
 
     def observation(self):
-        return self.run.observation() + self.opponent.observation()
+        return np.array(self.run.observation() + self.opponent.observation())
 
     def reward(self):
-        return [self.run.reward, self.opponent.reward]
+        return np.array([self.run.reward, self.opponent.reward])
 
     def move(self, action):
         done = False
@@ -157,45 +159,3 @@ class Board:
         pass
 
     pass
-
-
-if __name__ == "__main__":
-    board = Board()
-    # # WHITE
-    # board.move(action=7)
-    # board.print()
-    # # BLACK
-    # board.move(action=9)
-    # board.print()
-    # # WHITE
-    # board.move(action=9)
-    # board.print()
-    # # BLACK
-    # board.move(action=7)
-    # board.print()
-    # # WHITE
-    # board.move(action=6)
-    # board.print()
-    # # BLACK
-    # board.move(action=9)
-    # board.print()
-    # # WHITE
-    # board.move(action=5)
-    # board.print()
-    # # BLACK
-    # board.move(action=5)
-    # board.print()
-    # # WHITE
-
-    d = False
-    obs, rew = None, None
-
-    while not d:
-        a = board.sample_action()
-        print(a)
-        obs, rew, d, inf = board.move(action=a)
-        board.print()
-        pass
-
-    print(obs, rew)
-
