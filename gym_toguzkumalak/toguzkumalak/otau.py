@@ -18,15 +18,17 @@ class Otau:
         return str(self.kumalaks)
 
     def move(self):
-        kumalak_count = self.kumalaks
+        kumalaks = self.kumalaks
         self.kumalaks = 0
-        return kumalak_count
+        return kumalaks
 
     def add(self, opponent_kazan: Kazan):
         if self.tuzduk:
             opponent_kazan.add(1)
+            return True
         else:
             self.kumalaks += 1
+            return False
         pass
 
     def taken(self):

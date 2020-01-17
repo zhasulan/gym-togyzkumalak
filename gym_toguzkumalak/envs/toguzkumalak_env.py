@@ -34,3 +34,12 @@ class ToguzkumalakEnv(gym.Env):
 
     def check_action(self, action):
         return self.board.run.check_action(action)
+
+    def observation(self):
+        return self.board.observation()
+
+    def available_action(self):
+        return self.board.run.available_action()
+
+    def reward(self):
+        return self.board.reward()
