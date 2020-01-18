@@ -5,7 +5,7 @@
 
 # Table of Contents
 - [About Game](#about_game)
-- [Rules](#rules)
+    - [Rules](#rules)
 - [gym-toguzkumalak](#gym_toguzkumalak)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -27,8 +27,7 @@
 ## <a name="about_game"></a>About Game
 Toguz Kumalak (тоғыз құмалақ - Kazakh for “sheep droppings”), also known as Toguz Korgool (тогуз коргоол; same meaning) in Kyrgyz, is widely played in Central Asia. It is one of the few mancala games in which pits can be captured and turned into accumulation holes, a distinctive feature that adds another layer of strategic complexity. Toguz Kumalak has become a major mind sport that is officially promoted by the governments of Kazakhstan and Kyrgyztan.
 
----
-## <a name="rules"></a>Rules
+### <a name="rules"></a>Rules
 The game is played on a board, which consists of two rows of nine oblong holes (otau, literally, “yurt”) and two parallel furrows (kazan, literally, “kettle”) between them. The kazan serve as stores for captured balls. Initially, there are 9 little black balls (kumalak) in each hole. The holes are made in such a way that the two players can easily distinguish between an odd and an even number of balls. In addition, each player has a larger ball in a different color (usually white) that serves as a marker for any tuzduk the player might make later (see below). The players sit opposite each other, on the long sides of the board, directly in front of their holes. A player’s kazan, however, is adjacent to the opponent’s row. The player who starts the game is called “White”, the other player “Black”.
 Picture
 Toguz Kumalak starting position. White is light blue; Black is dark blue.
