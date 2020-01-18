@@ -84,23 +84,51 @@ The encoding used to represent the state is inspired by the one used by Gerald T
 
 ### <a name="observation"></a>Observation
 
-| Component| Observation                       | Min | Max |
-| -------- | --------------------------------- | --- | --- |
-| 0        | WHITE - 1st point,  1st component | 0.0 | 1.0 |
-| 1        | WHITE - 1st point,  2nd component | 0.0 | 1.0 |
-| 2        | WHITE - 1st point,  3rd component | 0.0 | 1.0 |
-| 3        | WHITE - 1st point,  4th component | 0.0 | 1.0 |
-| 4        | WHITE - 1st point,  5th component | 0.0 | 1.0 |
-| 4        | WHITE - 1st point,  6th component | 0.0 | 1.0 |
-| 4        | WHITE - 1st point,  7th component | 0.0 | 1.0 |
-| 4        | WHITE - 1st point,  1st component | 0.0 | 1.0 |
-| 4        | WHITE - 1st point,  1st component | 0.0 | 1.0 |
-| 4        | WHITE - 1st point,  1st component | 0.0 | 1.0 |
-| 4        | WHITE - 1st point,  1st component | 0.0 | 1.0 |
-| 4        | WHITE - 1st point,  1st component | 0.0 | 1.0 |
-| 4        | WHITE - 1st point,  1st component | 0.0 | 1.0 |
-| 4        | WHITE - 1st point,  1st component | 0.0 | 1.0 |
-| 123-123  | Current player                    | 0.0 | 1.0 |
+Type: Box(198)
+
+| Component| Observation                       | Min | Max  |
+| -------- | --------------------------------- | --- | ---- |
+| 0        | WHITE - 1st point,  1st component | 0.0 | 1.0  |
+| 1        | WHITE - 1st point,  2nd component | 0.0 | 1.0  |
+| 2        | WHITE - 1st point,  3rd component | 0.0 | 1.0  |
+| 3        | WHITE - 1st point,  4th component | 0.0 | 1.0  |
+| 4        | WHITE - 1st point,  5th component | 0.0 | 1.0  |
+| 4        | WHITE - 1st point,  6th component | 0.0 | 18.0 |
+| 4        | WHITE - 1st point,  7th component | 0.0 | 1.0  |
+| 0        | WHITE - 2nd point,  1st component | 0.0 | 1.0  |
+| 1        | WHITE - 2nd point,  2nd component | 0.0 | 1.0  |
+| 2        | WHITE - 2nd point,  3rd component | 0.0 | 1.0  |
+| 3        | WHITE - 2nd point,  4th component | 0.0 | 1.0  |
+| 4        | WHITE - 2nd point,  5th component | 0.0 | 1.0  |
+| 4        | WHITE - 2nd point,  6th component | 0.0 | 18.0 |
+| 4        | WHITE - 2nd point,  7th component | 0.0 | 1.0  |
+| ...      |                                   |     |      |
+| 57       | WHITE - 9th point,  1st component | 0.0 | 1.0  |
+| 58       | WHITE - 9th point,  2nd component | 0.0 | 1.0  |
+| 59       | WHITE - 9th point,  3rd component | 0.0 | 1.0  |
+| 60       | WHITE - 9th point,  4th component | 0.0 | 1.0  |
+| 61       | WHITE - 9th point,  5th component | 0.0 | 18.0 |
+| 62       | BLACK - 1st point,  1st component | 0.0 | 1.0  |
+| 63       | BLACK - 1st point,  2nd component | 0.0 | 1.0  |
+| 2        | BLACK - 1st point,  3rd component | 0.0 | 1.0  |
+| 3        | BLACK - 1st point,  4th component | 0.0 | 1.0  |
+| 4        | BLACK - 1st point,  5th component | 0.0 | 1.0  |
+| 4        | BLACK - 1st point,  6th component | 0.0 | 18.0 |
+| 4        | BLACK - 1st point,  7th component | 0.0 | 1.0  |
+| 0        | BLACK - 2nd point,  1st component | 0.0 | 1.0  |
+| 1        | BLACK - 2nd point,  2nd component | 0.0 | 1.0  |
+| 2        | BLACK - 2nd point,  3rd component | 0.0 | 1.0  |
+| 3        | BLACK - 2nd point,  4th component | 0.0 | 1.0  |
+| 4        | BLACK - 2nd point,  5th component | 0.0 | 1.0  |
+| 4        | BLACK - 2nd point,  6th component | 0.0 | 18.0 |
+| 4        | BLACK - 2nd point,  7th component | 0.0 | 1.0  |
+| ...      |                                   |     |      |
+| 0        | BLACK - 9th point,  1st component | 0.0 | 1.0  |
+| 1        | BLACK - 9th point,  2nd component | 0.0 | 1.0  |
+| 2        | BLACK - 9th point,  3rd component | 0.0 | 1.0  |
+| 3        | BLACK - 9th point,  4th component | 0.0 | 1.0  |
+| 4        | BLACK - 9th point,  5th component | 0.0 | 18.0 |
+| 123-123  | Current player                    | 0.0 | 1.0  |
 
 Encoding of a single hole (from 1st to 8th holes):
 
