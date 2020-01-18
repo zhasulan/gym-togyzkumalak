@@ -8,6 +8,7 @@
 - [Rules](#rules)
 - [gym-toguzkumalak](#gym_toguzkumalak)
 - [Installation](#installation)
+- [Usage](#usage)
 - [Environment](#env)
     - [Observation](#observation)
     - [Actions](#actions)
@@ -68,11 +69,7 @@ or
 pip install gym-toguzkumalak
 ```
 
----
-## <a name="env"></a>Environment
-The encoding used to represent the state is inspired by the one used by Gerald Tesauro[1].
-
-## Usage
+## <a name="usage"></a>Usage
 
 ```
 import gym
@@ -81,11 +78,24 @@ import gym_toguzkumalak
 env = gym.make('Toguzkumalak-v0')
 ```
 
-See https://github.com/matthiasplappert/keras-rl/tree/master/examples for some
-examples.
+---
+## <a name="env"></a>Environment
+The encoding used to represent the state is inspired by the one used by Gerald Tesauro[1].
+
+### <a name="observation"></a>Observation
+### <a name="actions"></a>Actions
+### <a name="reward"></a>Reward
+### <a name="starting_state"></a>Starting State
+### <a name="episode_termination"></a>Episode Termination
+### <a name="reset"></a>Reset
+### <a name="rendering"></a>Rendering
+### <a name="example"></a>Example
+#### <a name="play"></a>Play Random Agents
+#### <a name="valid_actions"></a>Valid actions
 
 ---
 ## <a name="useful_links"></a>Useful links
+- [1][Implementation Details TD-Gammon](http://www.scholarpedia.org/article/User:Gerald_Tesauro/Proposed/Td-gammon)
 
 - [https://www.abstractgames.org/toguz-kumalak.html](https://www.abstractgames.org/toguz-kumalak.html)
 - [Wikipedia](https://en.wikipedia.org/wiki/Toguz_korgol)
