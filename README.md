@@ -84,51 +84,55 @@ The encoding used to represent the state is inspired by the one used by Gerald T
 
 ### <a name="observation"></a>Observation
 
-Type: Box(198)
+Type: Box(118)
 
-| Component| Observation                       | Min | Max  |
-| -------- | --------------------------------- | --- | ---- |
-| 0        | WHITE - 1st point,  1st component | 0.0 | 1.0  |
-| 1        | WHITE - 1st point,  2nd component | 0.0 | 1.0  |
-| 2        | WHITE - 1st point,  3rd component | 0.0 | 1.0  |
-| 3        | WHITE - 1st point,  4th component | 0.0 | 1.0  |
-| 4        | WHITE - 1st point,  5th component | 0.0 | 1.0  |
-| 4        | WHITE - 1st point,  6th component | 0.0 | 18.0 |
-| 4        | WHITE - 1st point,  7th component | 0.0 | 1.0  |
-| 0        | WHITE - 2nd point,  1st component | 0.0 | 1.0  |
-| 1        | WHITE - 2nd point,  2nd component | 0.0 | 1.0  |
-| 2        | WHITE - 2nd point,  3rd component | 0.0 | 1.0  |
-| 3        | WHITE - 2nd point,  4th component | 0.0 | 1.0  |
-| 4        | WHITE - 2nd point,  5th component | 0.0 | 1.0  |
-| 4        | WHITE - 2nd point,  6th component | 0.0 | 18.0 |
-| 4        | WHITE - 2nd point,  7th component | 0.0 | 1.0  |
-| ...      |                                   |     |      |
-| 57       | WHITE - 9th point,  1st component | 0.0 | 1.0  |
-| 58       | WHITE - 9th point,  2nd component | 0.0 | 1.0  |
-| 59       | WHITE - 9th point,  3rd component | 0.0 | 1.0  |
-| 60       | WHITE - 9th point,  4th component | 0.0 | 1.0  |
-| 61       | WHITE - 9th point,  5th component | 0.0 | 18.0 |
-| 62       | BLACK - 1st point,  1st component | 0.0 | 1.0  |
-| 63       | BLACK - 1st point,  2nd component | 0.0 | 1.0  |
-| 2        | BLACK - 1st point,  3rd component | 0.0 | 1.0  |
-| 3        | BLACK - 1st point,  4th component | 0.0 | 1.0  |
-| 4        | BLACK - 1st point,  5th component | 0.0 | 1.0  |
-| 4        | BLACK - 1st point,  6th component | 0.0 | 18.0 |
-| 4        | BLACK - 1st point,  7th component | 0.0 | 1.0  |
-| 0        | BLACK - 2nd point,  1st component | 0.0 | 1.0  |
-| 1        | BLACK - 2nd point,  2nd component | 0.0 | 1.0  |
-| 2        | BLACK - 2nd point,  3rd component | 0.0 | 1.0  |
-| 3        | BLACK - 2nd point,  4th component | 0.0 | 1.0  |
-| 4        | BLACK - 2nd point,  5th component | 0.0 | 1.0  |
-| 4        | BLACK - 2nd point,  6th component | 0.0 | 18.0 |
-| 4        | BLACK - 2nd point,  7th component | 0.0 | 1.0  |
-| ...      |                                   |     |      |
-| 0        | BLACK - 9th point,  1st component | 0.0 | 1.0  |
-| 1        | BLACK - 9th point,  2nd component | 0.0 | 1.0  |
-| 2        | BLACK - 9th point,  3rd component | 0.0 | 1.0  |
-| 3        | BLACK - 9th point,  4th component | 0.0 | 1.0  |
-| 4        | BLACK - 9th point,  5th component | 0.0 | 18.0 |
-| 123-123  | Current player                    | 0.0 | 1.0  |
+| Component| Observation                      | Min | Max  |
+| -------- | -------------------------------- | --- | ---- |
+| 0        | WHITE - 1st hole,  1st component | 0.0 | 1.0  |
+| 1        | WHITE - 1st hole,  2nd component | 0.0 | 1.0  |
+| 2        | WHITE - 1st hole,  3rd component | 0.0 | 1.0  |
+| 3        | WHITE - 1st hole,  4th component | 0.0 | 1.0  |
+| 4        | WHITE - 1st hole,  5th component | 0.0 | 1.0  |
+| 4        | WHITE - 1st hole,  6th component | 0.0 | 18.0 |
+| 4        | WHITE - 1st hole,  7th component | 0.0 | 1.0  |
+| 0        | WHITE - 2nd hole,  1st component | 0.0 | 1.0  |
+| 1        | WHITE - 2nd hole,  2nd component | 0.0 | 1.0  |
+| 2        | WHITE - 2nd hole,  3rd component | 0.0 | 1.0  |
+| 3        | WHITE - 2nd hole,  4th component | 0.0 | 1.0  |
+| 4        | WHITE - 2nd hole,  5th component | 0.0 | 1.0  |
+| 4        | WHITE - 2nd hole,  6th component | 0.0 | 18.0 |
+| 4        | WHITE - 2nd hole,  7th component | 0.0 | 1.0  |
+| ...      |                                  |     |      |
+| 57       | WHITE - KAZAN hole balls         | 0.0 | 1.0  |
+| 58       | WHITE - Comparision kazans       | 0.0 | 1.0  |
+| 59       | WHITE - 9th hole,  1st component | 0.0 | 1.0  |
+| 60       | WHITE - 9th hole,  2nd component | 0.0 | 1.0  |
+| 61       | WHITE - 9th hole,  3rd component | 0.0 | 1.0  |
+| 62       | WHITE - 9th hole,  4th component | 0.0 | 1.0  |
+| 63       | WHITE - 9th hole,  5th component | 0.0 | 18.0 |
+| 64       | BLACK - 1st hole,  1st component | 0.0 | 1.0  |
+| 65       | BLACK - 1st hole,  2nd component | 0.0 | 1.0  |
+| 66       | BLACK - 1st hole,  3rd component | 0.0 | 1.0  |
+| 67       | BLACK - 1st hole,  4th component | 0.0 | 1.0  |
+| 68       | BLACK - 1st hole,  5th component | 0.0 | 1.0  |
+| 69       | BLACK - 1st hole,  6th component | 0.0 | 18.0 |
+| 70       | BLACK - 1st hole,  7th component | 0.0 | 1.0  |
+| 71       | BLACK - 2nd hole,  1st component | 0.0 | 1.0  |
+| 72       | BLACK - 2nd hole,  2nd component | 0.0 | 1.0  |
+| 73       | BLACK - 2nd hole,  3rd component | 0.0 | 1.0  |
+| 74       | BLACK - 2nd hole,  4th component | 0.0 | 1.0  |
+| 75       | BLACK - 2nd hole,  5th component | 0.0 | 1.0  |
+| 76       | BLACK - 2nd hole,  6th component | 0.0 | 18.0 |
+| 77       | BLACK - 2nd hole,  7th component | 0.0 | 1.0  |
+| ...      |                                  |     |      |
+| 110      | BLACK - 9th hole,  1st component | 0.0 | 1.0  |
+| 111      | BLACK - 9th hole,  2nd component | 0.0 | 1.0  |
+| 112      | BLACK - 9th hole,  3rd component | 0.0 | 1.0  |
+| 113      | BLACK - 9th hole,  4th component | 0.0 | 1.0  |
+| 114      | BLACK - 9th hole,  5th component | 0.0 | 18.0 |
+| 115      | BLACK - KAZAN hole balls         | 0.0 | 1.0  |
+| 116      | BLACK - Comparision kazans       | 0.0 | 1.0  |
+| 117-118  | Current player                   | 0.0 | 1.0  |
 
 Encoding of a single hole (from 1st to 8th holes):
 
@@ -165,6 +169,29 @@ Example:
 | ...   |                                                   |
 | 18    | [1.0, 1.0, 0.0, 0.0 / 8,  0.0 / 17, 2.0 / 9, 0.0] |
 | 19    | [1.0, 1.0, 1.0, 1.0 / 8,  1.0 / 17, 2.0 / 9, 0.0] |
+
+Encoding of KAZAN balls:
+
+| Balls           | Encoding                |           
+| --------------- | ----------------------- |
+| 0 - 82 and more | [ min(balls, 82) / 82 ] |
+
+Encoding of comparision kazans (Example for WHITE player):
+
+| Balls    | Encoding |           
+| -------- | -------- |
+| WK > BL  | [1.0]    |
+| WK <= BL | [0.0]    |
+
+- WK = White kazan
+- BK = Black kazan
+
+Encoding of the current player:
+
+| Player  | Encoding   |           
+| ------- | ---------- |
+| WHITE   | [1.0, 0.0] |
+| BLACK   | [0.0, 1.0] |
 
 ### <a name="actions"></a>Actions
 ### <a name="reward"></a>Reward
