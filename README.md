@@ -52,6 +52,7 @@ Game clocks are used in all important Toguz Kumalak tournaments. In world champi
 This repository contains a Toguz Kumalak game implementation in OpenAI Gym.
 Given the current state of the board, and the current player, it computes all the legal actions/moves (iteratively) that the current player can execute. The legal actions are generated in such a way that they can be moved in comparison with other actions that cannot be moved due to the fact that the holes may be empty or they are in a tuzduk state.
 
+---
 ## <a name="installation"></a>Installation
 
 Install the [OpenAI gym](https://gym.openai.com/docs/).
@@ -68,6 +69,7 @@ or
 pip install gym-toguzkumalak
 ```
 
+---
 ## <a name="usage"></a>Usage
 
 ```
