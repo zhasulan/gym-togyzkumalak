@@ -23,8 +23,7 @@
 
 ---
 ## <a name="about_game"></a>About Game
-This is old central Asia game [Toguzkumalak](https://en.wikipedia.org/wiki/Toguz_korgol) and one of the variant of game of [Mancala](https://en.wikipedia.org/wiki/Mancala). The toguzkumalak is a family of two-player turn-based strategy board game.
-Environment of this game provide full information. 
+Toguz Kumalak (тоғыз құмалақ - Kazakh for “sheep droppings”), also known as Toguz Korgool (тогуз коргоол; same meaning) in Kyrgyz, is widely played in Central Asia. It is one of the few mancala games in which pits can be captured and turned into accumulation holes, a distinctive feature that adds another layer of strategic complexity. Toguz Kumalak has become a major mind sport that is officially promoted by the governments of Kazakhstan and Kyrgyztan.
 
 ---
 ## <a name="gym_toguzkumalak"></a>gym-toguzkumalak
@@ -61,3 +60,13 @@ env = gym.make('Toguzkumalak-v0')
 
 See https://github.com/matthiasplappert/keras-rl/tree/master/examples for some
 examples.
+
+---
+## <a name="useful_links"></a>Useful links
+
+- [https://www.abstractgames.org/toguz-kumalak.html](https://www.abstractgames.org/toguz-kumalak.html)
+- [Wikipedia](https://en.wikipedia.org/wiki/Toguz_korgol)
+
+---
+## <a name="license"></a>License
+[MIT](https://github.com/dellalibera/gym-backgammon/blob/master/LICENSE) 
