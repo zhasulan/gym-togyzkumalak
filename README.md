@@ -81,7 +81,7 @@ env = gym.make('Toguzkumalak-v0')
 
 ---
 ## <a name="env"></a>Environment
-The encoding used to represent the state is inspired by the one used by Gerald Tesauro[1].
+The encoding used to represent the state is inspired by the one used by Gerald Tesauro[1], although different due to the rules of the current game.
 
 ### <a name="observation"></a>Observation
 
