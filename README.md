@@ -83,6 +83,61 @@ env = gym.make('Toguzkumalak-v0')
 The encoding used to represent the state is inspired by the one used by Gerald Tesauro[1].
 
 ### <a name="observation"></a>Observation
+
+| Component| Observation                       | Min | Max |
+| -------- | --------------------------------- | --- | --- |
+| 0        | WHITE - 1st point,  1st component | 0.0 | 1.0 |
+| 1        | WHITE - 1st point,  2nd component | 0.0 | 1.0 |
+| 2        | WHITE - 1st point,  3rd component | 0.0 | 1.0 |
+| 3        | WHITE - 1st point,  4th component | 0.0 | 1.0 |
+| 4        | WHITE - 1st point,  5th component | 0.0 | 1.0 |
+| 4        | WHITE - 1st point,  6th component | 0.0 | 1.0 |
+| 4        | WHITE - 1st point,  7th component | 0.0 | 1.0 |
+| 4        | WHITE - 1st point,  1st component | 0.0 | 1.0 |
+| 4        | WHITE - 1st point,  1st component | 0.0 | 1.0 |
+| 4        | WHITE - 1st point,  1st component | 0.0 | 1.0 |
+| 4        | WHITE - 1st point,  1st component | 0.0 | 1.0 |
+| 4        | WHITE - 1st point,  1st component | 0.0 | 1.0 |
+| 4        | WHITE - 1st point,  1st component | 0.0 | 1.0 |
+| 4        | WHITE - 1st point,  1st component | 0.0 | 1.0 |
+| 123-123  | Current player                    | 0.0 | 1.0 |
+
+Encoding of a single hole (from 1st to 8th holes):
+
+| Component | Algorithm         |
+| --------- | ----------------- |
+| 1st       | n >= 1            |
+| 2nd       | n >= 2            |
+| 3th       | n mod 2           |
+| 4th       | (n mod 9) / 8     |
+| 5th       | (n mod 18) / 17   |
+| 6th       | n / 9             |
+| 7th       | if hole is tuzduk |
+
+9th hole algorithm is different
+
+| Component | Algorithm         |
+| --------- | ----------------- |
+| 1st       | n >= 1            |
+| 2nd       | n mod 2           |
+| 3th       | (n mod 9) / 8     |
+| 4th       | (n mod 18) / 17   |
+| 5th       | n / 9             |
+
+Example:
+
+| Balls | Encoding                                          |
+| ----- | ------------------------------------------------- |
+| 0     | [0.0, 0.0, 0.0, 0.0 / 8,  0.0 / 17, 0.0 / 9, 0.0] |
+| 1     | [1.0, 0.0, 1.0, 1.0 / 8,  1.0 / 17, 1.0 / 9, 0.0] |
+| 2     | [1.0, 1.0, 0.0, 2.0 / 8,  2.0 / 17, 2.0 / 9, 0.0] |
+| ...   |                                                   |
+| 9     | [1.0, 1.0, 1.0, 0.0 / 8,  9.0 / 17, 2.0 / 9, 0.0] |
+| 10    | [1.0, 1.0, 0.0, 1.0 / 8, 10.0 / 17, 2.0 / 9, 0.0] |
+| ...   |                                                   |
+| 18    | [1.0, 1.0, 0.0, 0.0 / 8,  0.0 / 17, 2.0 / 9, 0.0] |
+| 19    | [1.0, 1.0, 1.0, 1.0 / 8,  1.0 / 17, 2.0 / 9, 0.0] |
+
 ### <a name="actions"></a>Actions
 ### <a name="reward"></a>Reward
 ### <a name="starting_state"></a>Starting State
