@@ -84,7 +84,7 @@ The encoding used to represent the state is inspired by the one used by Gerald T
 
 ### <a name="observation"></a>Observation
 
-Type: Box(118)
+Type: Box(127)
 
 | Component| Observation                      | Min | Max  |
 | -------- | -------------------------------- | --- | ---- |
@@ -93,46 +93,46 @@ Type: Box(118)
 | 2        | WHITE - 1st hole,  3rd component | 0.0 | 1.0  |
 | 3        | WHITE - 1st hole,  4th component | 0.0 | 1.0  |
 | 4        | WHITE - 1st hole,  5th component | 0.0 | 1.0  |
-| 4        | WHITE - 1st hole,  6th component | 0.0 | 18.0 |
-| 4        | WHITE - 1st hole,  7th component | 0.0 | 1.0  |
-| 0        | WHITE - 2nd hole,  1st component | 0.0 | 1.0  |
-| 1        | WHITE - 2nd hole,  2nd component | 0.0 | 1.0  |
-| 2        | WHITE - 2nd hole,  3rd component | 0.0 | 1.0  |
-| 3        | WHITE - 2nd hole,  4th component | 0.0 | 1.0  |
-| 4        | WHITE - 2nd hole,  5th component | 0.0 | 1.0  |
-| 4        | WHITE - 2nd hole,  6th component | 0.0 | 18.0 |
-| 4        | WHITE - 2nd hole,  7th component | 0.0 | 1.0  |
+| 5        | WHITE - 1st hole,  6th component | 0.0 | 18.0 |
+| 6        | WHITE - 1st hole,  7th component | 0.0 | 1.0  |
+| 7        | WHITE - 2nd hole,  1st component | 0.0 | 1.0  |
+| 8        | WHITE - 2nd hole,  2nd component | 0.0 | 1.0  |
+| 9        | WHITE - 2nd hole,  3rd component | 0.0 | 1.0  |
+| 10       | WHITE - 2nd hole,  4th component | 0.0 | 1.0  |
+| 11       | WHITE - 2nd hole,  5th component | 0.0 | 1.0  |
+| 12       | WHITE - 2nd hole,  6th component | 0.0 | 18.0 |
+| 13       | WHITE - 2nd hole,  7th component | 0.0 | 1.0  |
 | ...      |                                  |     |      |
-| 57       | WHITE - KAZAN hole balls         | 0.0 | 1.0  |
-| 58       | WHITE - Comparision kazans       | 0.0 | 1.0  |
-| 59       | WHITE - 9th hole,  1st component | 0.0 | 1.0  |
-| 60       | WHITE - 9th hole,  2nd component | 0.0 | 1.0  |
-| 61       | WHITE - 9th hole,  3rd component | 0.0 | 1.0  |
-| 62       | WHITE - 9th hole,  4th component | 0.0 | 1.0  |
-| 63       | WHITE - 9th hole,  5th component | 0.0 | 18.0 |
-| 64       | BLACK - 1st hole,  1st component | 0.0 | 1.0  |
-| 65       | BLACK - 1st hole,  2nd component | 0.0 | 1.0  |
-| 66       | BLACK - 1st hole,  3rd component | 0.0 | 1.0  |
-| 67       | BLACK - 1st hole,  4th component | 0.0 | 1.0  |
-| 68       | BLACK - 1st hole,  5th component | 0.0 | 1.0  |
-| 69       | BLACK - 1st hole,  6th component | 0.0 | 18.0 |
-| 70       | BLACK - 1st hole,  7th component | 0.0 | 1.0  |
-| 71       | BLACK - 2nd hole,  1st component | 0.0 | 1.0  |
-| 72       | BLACK - 2nd hole,  2nd component | 0.0 | 1.0  |
-| 73       | BLACK - 2nd hole,  3rd component | 0.0 | 1.0  |
-| 74       | BLACK - 2nd hole,  4th component | 0.0 | 1.0  |
-| 75       | BLACK - 2nd hole,  5th component | 0.0 | 1.0  |
-| 76       | BLACK - 2nd hole,  6th component | 0.0 | 18.0 |
-| 77       | BLACK - 2nd hole,  7th component | 0.0 | 1.0  |
+| 56       | WHITE - 9th hole,  1st component | 0.0 | 1.0  |
+| 57       | WHITE - 9th hole,  2nd component | 0.0 | 1.0  |
+| 58       | WHITE - 9th hole,  3rd component | 0.0 | 1.0  |
+| 59       | WHITE - 9th hole,  4th component | 0.0 | 1.0  |
+| 60       | WHITE - 9th hole,  5th component | 0.0 | 18.0 |
+| 61       | WHITE - KAZAN hole balls         | 0.0 | 1.0  |
+| 62       | WHITE - Comparision kazans       | 0.0 | 1.0  |
+| 63       | BLACK - 1st hole,  1st component | 0.0 | 1.0  |
+| 64       | BLACK - 1st hole,  2nd component | 0.0 | 1.0  |
+| 65       | BLACK - 1st hole,  3rd component | 0.0 | 1.0  |
+| 66       | BLACK - 1st hole,  4th component | 0.0 | 1.0  |
+| 67       | BLACK - 1st hole,  5th component | 0.0 | 1.0  |
+| 68       | BLACK - 1st hole,  6th component | 0.0 | 18.0 |
+| 69       | BLACK - 1st hole,  7th component | 0.0 | 1.0  |
+| 70       | BLACK - 2nd hole,  1st component | 0.0 | 1.0  |
+| 71       | BLACK - 2nd hole,  2nd component | 0.0 | 1.0  |
+| 72       | BLACK - 2nd hole,  3rd component | 0.0 | 1.0  |
+| 73       | BLACK - 2nd hole,  4th component | 0.0 | 1.0  |
+| 74       | BLACK - 2nd hole,  5th component | 0.0 | 1.0  |
+| 75       | BLACK - 2nd hole,  6th component | 0.0 | 18.0 |
+| 76       | BLACK - 2nd hole,  7th component | 0.0 | 1.0  |
 | ...      |                                  |     |      |
-| 110      | BLACK - 9th hole,  1st component | 0.0 | 1.0  |
-| 111      | BLACK - 9th hole,  2nd component | 0.0 | 1.0  |
-| 112      | BLACK - 9th hole,  3rd component | 0.0 | 1.0  |
-| 113      | BLACK - 9th hole,  4th component | 0.0 | 1.0  |
-| 114      | BLACK - 9th hole,  5th component | 0.0 | 18.0 |
-| 115      | BLACK - KAZAN hole balls         | 0.0 | 1.0  |
-| 116      | BLACK - Comparision kazans       | 0.0 | 1.0  |
-| 117-118  | Current player                   | 0.0 | 1.0  |
+| 118      | BLACK - 9th hole,  1st component | 0.0 | 1.0  |
+| 119      | BLACK - 9th hole,  2nd component | 0.0 | 1.0  |
+| 120      | BLACK - 9th hole,  3rd component | 0.0 | 1.0  |
+| 121      | BLACK - 9th hole,  4th component | 0.0 | 1.0  |
+| 122      | BLACK - 9th hole,  5th component | 0.0 | 18.0 |
+| 123      | BLACK - KAZAN hole balls         | 0.0 | 1.0  |
+| 124      | BLACK - Comparision kazans       | 0.0 | 1.0  |
+| 125-126  | Current player                   | 0.0 | 1.0  |
 
 Encoding of a single hole (from 1st to 8th holes):
 
