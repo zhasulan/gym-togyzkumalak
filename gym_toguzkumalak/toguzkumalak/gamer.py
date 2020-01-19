@@ -23,7 +23,6 @@ class Gamer:
         }
 
         self.kazan = Kazan()
-        self.reward = 0
 
         # # Additional Features
         # # 1 - ход взял шарики в казан; 0 - не брал

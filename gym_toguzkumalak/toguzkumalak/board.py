@@ -11,7 +11,7 @@ from gym_toguzkumalak.toguzkumalak.otau import Otau
 class Board:
 
     def __init__(self):
-
+        self.reward = 0
         self.gamers = {
             'white': Gamer('white'),
             'black': Gamer('black')
@@ -19,8 +19,6 @@ class Board:
 
         self.run: Gamer = self.gamers['white']
         self.opponent: Gamer = self.gamers['black']
-
-        pass
 
     def opponent_gamer(self, gamer: Gamer) -> Gamer:
         return self.gamers['white'] if gamer.name == 'black' else self.gamers['black']
@@ -35,8 +33,11 @@ class Board:
         return self.gamers[current_gamer_home.name].home
 
     def win_gamer(self, gamer: Gamer):
-        gamer.reward = 1
-        self.opponent_gamer(gamer).reward = -1
+        if gamer.name == 'white':
+            self.reward = 1
+            pass
+        else:
+            self.reward = -1
         pass
 
     def sample_action(self):
@@ -63,8 +64,8 @@ class Board:
         #     return np.array(self.opponent.observation() + self.run.observation())
         # return [np.array(self.run.observation() + self.opponent.observation()), np.array(self.opponent.observation() + self.run.observation())]
 
-    def reward(self):
-        return self.run.reward
+    # def reward(self):
+    #     return self.run.reward
         # return np.array([self.run.reward, self.opponent.reward])
 
     def take(self, otau: Otau):
@@ -155,7 +156,7 @@ class Board:
             done = True
             pass
 
-        observation, reward = self.observation(), self.reward()
+        observation, reward = self.observation(), self.reward
         self.switch_gamer()
         return observation, reward, done, info
 

@@ -15,8 +15,8 @@ class ToguzkumalakEnv(gym.Env):
         self.board = Board()
         self.action_space = ToguzkumalakDiscrete(9, self.board)
 
-        low = np.zeros((127, 1))
-        high = np.ones((127, 1))
+        low = np.zeros((128, 1))
+        high = np.ones((128, 1))
 
         for i in range(5, 56, 7):
             high[i] = 18
@@ -26,7 +26,7 @@ class ToguzkumalakEnv(gym.Env):
         for i in range(63, 117, 7):
             high[i] = 18
             pass
-        high[122] = 18
+        high[123] = 18
 
         self.observation_space = Box(low=low, high=high)
 
