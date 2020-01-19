@@ -35,4 +35,25 @@ class Otau:
         self.kumalaks = 0
         pass
 
+    def observation(self):
+        if self.serial != 8:
+            return [
+                int(self.kumalaks >= 1),
+                int(self.kumalaks >= 2),
+                self.kumalaks % 2,
+                (self.kumalaks % 9) / 8,
+                (self.kumalaks % 18) / 17,
+                self.kumalaks / 9,
+                int(self.tuzduk)
+            ]
+        else:
+            return [
+                int(self.kumalaks >= 1),
+                self.kumalaks % 2,
+                (self.kumalaks % 9) / 8,
+                (self.kumalaks % 18) / 17,
+                self.kumalaks / 9
+            ]
+        pass
+
     pass

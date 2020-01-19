@@ -14,7 +14,7 @@ def main():
         env.render()
         pass
 
-    print(state, reward)
+    print(state.shape, reward)
     pass
 
 

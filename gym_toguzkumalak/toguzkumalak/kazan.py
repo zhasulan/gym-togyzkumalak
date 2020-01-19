@@ -11,4 +11,7 @@ class Kazan:
     def __str__(self):
         return self.score
 
+    def observation(self):
+        return min(self.score, 82) / 82
+
     pass

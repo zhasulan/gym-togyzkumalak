@@ -52,7 +52,11 @@ class Board:
     #         self.run.home[]
 
     def observation(self):
-        return np.array([np.array(self.run.observation(self.opponent.kazan) + self.opponent.observation(self.run.kazan))])
+        if self.run.name == 'white':
+            return np.array(self.run.observation(self.opponent.kazan) + self.opponent.observation(self.run.kazan) + [1, 0])
+        else:
+            return np.array(self.opponent.observation(self.run.kazan) + self.run.observation(self.opponent.kazan) + [0, 1])
+
         # if self.run.name == 'white':
         #     return np.array(self.run.observation() + self.opponent.observation())
         # else:
@@ -69,7 +73,7 @@ class Board:
         pass
 
     def move(self, action):
-        self.run.initialize()
+        # self.run.initialize()
         opponent_atsyrau = self.opponent.atsyrau()
         done = False
         info = {}
@@ -100,16 +104,16 @@ class Board:
                 otau = 0
                 pass
 
-            # home[otau].add(tuzduk_kazan)
-            if home_gamer.add_home(self.run, otau, tuzduk_kazan):
-                if opponent_side:
-                    self.run.get_self_tuzduk = True
-                    pass
-                else:
-                    self.run.get_opponent_tuzduk = True
-                    pass
-                pass
-            pass
+            home[otau].add(tuzduk_kazan)
+            # if home_gamer.add_home(self.run, otau, tuzduk_kazan):
+            #     if opponent_side:
+            #         self.run.get_self_tuzduk = True
+            #         pass
+            #     else:
+            #         self.run.get_opponent_tuzduk = True
+            #         pass
+            #     pass
+            # pass
 
         if opponent_side:
             self.run.last_ball_opponent_home = True
@@ -201,6 +205,7 @@ class Board:
 
 
 if __name__ == '__main__':
+    board = Board()
     # # W
     # board.move(0)
     # board.print()
@@ -246,16 +251,16 @@ if __name__ == '__main__':
     # # board.move(5)
     # # board.print()
 
-    r = []
-    for i in range(100):
-        board = Board()
-
-        d = False
-        j = 0
-        while not d:
-            j += 1
-            obs, rew, d, _ = board.move(board.sample_action())
-            pass
-        r.append(j)
-
-    print(np.mean(np.array(r)))
+    # r = []
+    # for i in range(100):
+    #     board = Board()
+    #
+    #     d = False
+    #     j = 0
+    #     while not d:
+    #         j += 1
+    #         obs, rew, d, _ = board.move(board.sample_action())
+    #         pass
+    #     r.append(j)
+    #
+    # print(np.mean(np.array(r)))

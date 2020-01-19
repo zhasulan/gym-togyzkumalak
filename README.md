@@ -126,14 +126,14 @@ Type: Box(127)
 | 75       | BLACK - 2nd hole,  6th component | 0.0 | 18.0 |
 | 76       | BLACK - 2nd hole,  7th component | 0.0 | 1.0  |
 | ...      |                                  |     |      |
-| 118      | BLACK - 9th hole,  1st component | 0.0 | 1.0  |
-| 119      | BLACK - 9th hole,  2nd component | 0.0 | 1.0  |
-| 120      | BLACK - 9th hole,  3rd component | 0.0 | 1.0  |
-| 121      | BLACK - 9th hole,  4th component | 0.0 | 1.0  |
-| 122      | BLACK - 9th hole,  5th component | 0.0 | 18.0 |
-| 123      | BLACK - KAZAN hole balls         | 0.0 | 1.0  |
-| 124      | BLACK - Comparision kazans       | 0.0 | 1.0  |
-| 125-126  | Current player                   | 0.0 | 1.0  |
+| 119      | BLACK - 9th hole,  1st component | 0.0 | 1.0  |
+| 120      | BLACK - 9th hole,  2nd component | 0.0 | 1.0  |
+| 121      | BLACK - 9th hole,  3rd component | 0.0 | 1.0  |
+| 122      | BLACK - 9th hole,  4th component | 0.0 | 1.0  |
+| 123      | BLACK - 9th hole,  5th component | 0.0 | 18.0 |
+| 124      | BLACK - KAZAN hole balls         | 0.0 | 1.0  |
+| 125      | BLACK - Comparision kazans       | 0.0 | 1.0  |
+| 126-127  | Current player                   | 0.0 | 1.0  |
 
 Encoding of a single hole (from 1st to 8th holes):
 
