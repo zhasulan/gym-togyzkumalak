@@ -206,7 +206,7 @@ Encoding of the current player:
 
 ---
 ## <a name="useful_links"></a>Useful links
-- [1][Implementation Details TD-Gammon](http://www.scholarpedia.org/article/User:Gerald_Tesauro/Proposed/Td-gammon)
+- [1] [Implementation Details TD-Gammon](http://www.scholarpedia.org/article/User:Gerald_Tesauro/Proposed/Td-gammon)
 
 - [https://www.abstractgames.org/toguz-kumalak.html](https://www.abstractgames.org/toguz-kumalak.html)
 - [Wikipedia](https://en.wikipedia.org/wiki/Toguz_korgol)
