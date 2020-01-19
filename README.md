@@ -1,6 +1,6 @@
 <h1 align="center">Toguzkumalak OpenAI Gym</h1> <br>
 <p align="center">
-   <img alt="Toguzkumalak" title="Toguzkumalak" src="./logo.jpg" width="350">
+   <img alt="Toguzkumalak" title="Toguzkumalak" src="./logo.jpg">
 </p>
 
 # Table of Contents
