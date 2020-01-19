@@ -189,7 +189,7 @@ Encoding of comparision kazans (Example for WHITE player):
 
 Encoding of the current player:
 
-| Player  | Encoding   |           
+| Player  | Encoding   |
 | ------- | ---------- |
 | WHITE   | [1.0, 0.0] |
 | BLACK   | [0.0, 1.0] |
