@@ -85,7 +85,7 @@ The encoding used to represent the state is inspired by the one used by Gerald T
 
 ### <a name="observation"></a>Observation
 
-Type: Box(127)
+Type: Box(128)
 
 | Component| Observation                      | Min | Max  |
 | -------- | -------------------------------- | --- | ---- |
