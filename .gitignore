@@ -83,3 +83,8 @@ fabric.properties
 dist/
 gym_togyzkumalak.egg-info/
 build
+.idea/.name
+.idea/gym-togyzkumalak.iml
+gym_togyzkumalak/__pycache__/
+gym_togyzkumalak/envs/__pycache__/
+gym_togyzkumalak/togyzkumalak/__pycache__/
