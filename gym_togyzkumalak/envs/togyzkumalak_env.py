@@ -56,4 +56,4 @@ class TogyzkumalakEnv(gym.Env):
         return self.board.run.available_action()
 
     def reward(self):
-        return self.board.reward()
+        return self.board.reward

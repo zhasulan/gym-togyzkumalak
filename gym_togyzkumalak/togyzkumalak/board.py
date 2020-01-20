@@ -54,9 +54,11 @@ class Board:
 
     def observation(self):
         if self.run.name == 'white':
-            return np.array(self.run.observation(self.opponent.kazan) + self.opponent.observation(self.run.kazan) + [1, 0])
+            return np.array([np.array(
+                self.run.observation(self.opponent.kazan) + self.opponent.observation(self.run.kazan) + [1, 0])])
         else:
-            return np.array(self.opponent.observation(self.run.kazan) + self.run.observation(self.opponent.kazan) + [0, 1])
+            return np.array([np.array(
+                self.opponent.observation(self.run.kazan) + self.run.observation(self.opponent.kazan) + [0, 1])])
 
         # if self.run.name == 'white':
         #     return np.array(self.run.observation() + self.opponent.observation())
@@ -66,7 +68,7 @@ class Board:
 
     # def reward(self):
     #     return self.run.reward
-        # return np.array([self.run.reward, self.opponent.reward])
+    # return np.array([self.run.reward, self.opponent.reward])
 
     def take(self, otau: Otau):
         self.run.add(otau.kumalaks)
@@ -117,19 +119,14 @@ class Board:
             # pass
 
         if opponent_side:
-            self.run.last_ball_opponent_home = True
             if home[otau].kumalaks % 2 == 0:
                 self.take(home[otau])
                 pass
             if home[otau].kumalaks == 3 and otau != 9 and not self.run.tuzduk_announced and home[otau].serial != action:
                 home[otau].tuzduk = True
                 self.run.tuzduk_announced = True
-                self.run.tuzduk_announced_feature = True
                 self.take(home[otau])
                 pass
-            pass
-        else:
-            self.run.last_ball_opponent_home = False
             pass
 
         if self.run.kazan.score > 81:
@@ -146,13 +143,9 @@ class Board:
             self.win_gamer(self.run)
             done = True
             pass
-        else:
-            if opponent_atsyrau:
-                self.run.out_opponent_atsyrau = True
-                pass
-            pass
 
         if self.run.kazan.score == 81 and self.opponent.kazan.score == 81:
+            self.reward = 0
             done = True
             pass
 
@@ -204,64 +197,3 @@ class Board:
 
     pass
 
-
-if __name__ == '__main__':
-    board = Board()
-    # # W
-    # board.move(0)
-    # board.print()
-    # # B
-    # board.move(1)
-    # board.print()
-    # # W
-    # board.move(1)
-    # board.print()
-    # # B
-    # board.move(8)
-    # board.print()
-    # # W
-    # board.move(0)
-    # board.print()
-    # # B
-    # board.move(8)
-    # board.print()
-    # # W
-    # board.move(6)
-    # board.print()
-    # # B
-    # board.move(6)
-    # board.print()
-    # # W
-    # board.move(2)
-    # board.print()
-    # # B
-    # board.move(8)
-    # board.print()
-    # # W
-    # board.move(2)
-    # board.print()
-    # # B
-    # board.move(4)
-    # board.print()
-    # # W
-    # board.move(4)
-    # board.print()
-    # # B
-    # # board.move(8)
-    # # board.print()
-    # # board.move(5)
-    # # board.print()
-
-    # r = []
-    # for i in range(100):
-    #     board = Board()
-    #
-    #     d = False
-    #     j = 0
-    #     while not d:
-    #         j += 1
-    #         obs, rew, d, _ = board.move(board.sample_action())
-    #         pass
-    #     r.append(j)
-    #
-    # print(np.mean(np.array(r)))
