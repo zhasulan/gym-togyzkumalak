@@ -1,9 +1,9 @@
 import gym
-import gym_toguzkumalak
+import gym_togyzkumalak
 
 
 def main():
-    env = gym.make('Toguzkumalak-v0')
+    env = gym.make('Togyzkumalak-v0')
     env.reset()
 
     done = False

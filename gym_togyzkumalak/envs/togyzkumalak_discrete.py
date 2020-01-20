@@ -1,10 +1,10 @@
 from gym.spaces import Discrete
 
 
-class ToguzkumalakDiscrete(Discrete):
+class TogyzkumalakDiscrete(Discrete):
 
     def __init__(self, n, board):
-        super(ToguzkumalakDiscrete, self).__init__(n)
+        super(TogyzkumalakDiscrete, self).__init__(n)
         self.board = board
         pass
 

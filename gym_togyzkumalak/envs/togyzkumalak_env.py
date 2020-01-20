@@ -2,18 +2,18 @@ import gym
 from gym.spaces import Box
 import numpy as np
 
-from gym_toguzkumalak.envs.toguzkumalak_discrete import ToguzkumalakDiscrete
-from gym_toguzkumalak.toguzkumalak.board import Board
+from gym_togyzkumalak.envs.togyzkumalak_discrete import TogyzkumalakDiscrete
+from gym_togyzkumalak.togyzkumalak.board import Board
 
 
-class ToguzkumalakEnv(gym.Env):
+class TogyzkumalakEnv(gym.Env):
     metadata = {'render.modes': ['human']}
 
     def __init__(self):
         self.__version__ = "0.1.0"
 
         self.board = Board()
-        self.action_space = ToguzkumalakDiscrete(9, self.board)
+        self.action_space = TogyzkumalakDiscrete(9, self.board)
 
         low = np.zeros((128, 1))
         high = np.ones((128, 1))
