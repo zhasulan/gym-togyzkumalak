@@ -1,6 +1,6 @@
-<h1 align="center">Togyzkumalak OpenAI Gym</h1> <br>
+<h1 align="center">Togyz Kumalak OpenAI Gym</h1> <br>
 <p align="center">
-   <img alt="Togyzkumalak" title="Togyzkumalak" src="https://raw.githubusercontent.com/zhasulan/gym-togyzkumalak/master/logo.jpg">
+   <img alt="Togyz Kumalak" title="Togyz Kumalak" src="https://raw.githubusercontent.com/zhasulan/gym-togyzkumalak/master/logo.jpg">
 </p>
 
 # Table of Contents
